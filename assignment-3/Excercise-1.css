@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 70px 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+  background-color: rgb(150, 17, 61); /*Couldn't quite get the color pallet right.*/
+  border-radius: 10px;
+  transform: translateY(-30px);
+}
+
+section p {
+    font-size: 1.6rem;
+    text-align: left;
+}
