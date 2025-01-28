@@ -61,10 +61,13 @@ div#rightItem {
 div.row {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 20px;
+}
+
+div.left, div.right {
+    flex-grow: 1;
 }
 
 label {
@@ -79,7 +82,7 @@ input {
   width: 100%;
   outline: none;
   border: 1px solid #f0f0f0;
-  padding: 10px 0;
+  padding: 10px 0;;
 }
 
 form img {
@@ -128,4 +131,45 @@ form p {
 
 form p a {
     color: #2ec4b6;
+}
+
+@media (max-width: 830px) and (min-width: 481px) {
+    div#flex-container {
+        flex-direction: column;
+    }
+
+    div#leftItem {
+        width: 100%;
+      }
+
+      div#rightItem {
+        width: 100%;
+      }
+}
+
+@media (max-width: 480px) {
+    div#flex-container {
+        flex-direction: column;
+    }
+
+    div#leftItem {
+        width: 100%;
+      }
+
+      div#rightItem {
+        width: 100%;
+      }
+
+      div.row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      p.big {
+        display: none;
+      }
+
+      p.mobile {
+        display: block;
+      }
 }
