@@ -44,7 +44,7 @@ div#leftItem p {
 }
 
 p.mobile {
-    display: none;
+  display: none;
 }
 
 div#rightItem {
@@ -53,8 +53,6 @@ div#rightItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center;
-  gap: 20px; */
   padding: 35px;
 }
 
@@ -66,8 +64,9 @@ div.row {
   margin-bottom: 20px;
 }
 
-div.left, div.right {
-    flex-grow: 1;
+div.left,
+div.right {
+  flex-grow: 1;
 }
 
 label {
@@ -82,7 +81,7 @@ input {
   width: 100%;
   outline: none;
   border: 1px solid #f0f0f0;
-  padding: 10px 0;;
+  padding: 10px 0;
 }
 
 form img {
@@ -101,7 +100,7 @@ div.icon {
 }
 
 .no-icon {
-    padding: 10px;
+  padding: 10px;
 }
 
 div.icon input {
@@ -109,7 +108,7 @@ div.icon input {
 }
 
 div.item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -130,46 +129,54 @@ form p {
 }
 
 form p a {
-    color: #2ec4b6;
+  color: #2ec4b6;
 }
 
 @media (max-width: 830px) and (min-width: 481px) {
-    div#flex-container {
-        flex-direction: column;
-    }
+  div#flex-container {
+    flex-direction: column;
+  }
 
-    div#leftItem {
-        width: 100%;
-      }
+  div#leftItem {
+    width: 100%;
+  }
 
-      div#rightItem {
-        width: 100%;
-      }
+  div#rightItem {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    div#flex-container {
-        flex-direction: column;
-    }
+  div#flex-container {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    div#leftItem {
-        width: 100%;
-      }
+  div#leftItem {
+    width: 100%;
+  }
 
-      div#rightItem {
-        width: 100%;
-      }
+  div#leftItem h1 {
+    font-size: 30px;
+  }
 
-      div.row {
-        display: flex;
-        flex-direction: column;
-      }
+  div#rightItem {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-      p.big {
-        display: none;
-      }
+  div.row {
+    display: flex;
+    flex-direction: column;
+  }
 
-      p.mobile {
-        display: block;
-      }
+  p.big {
+    display: none;
+  }
+
+  p.mobile {
+    display: block;
+  }
 }
