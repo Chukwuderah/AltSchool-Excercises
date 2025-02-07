@@ -11,7 +11,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 0 50px;
-  background-color: #F5F8FA;
+  background-color: #f5f8fa;
 }
 
 header {
@@ -97,30 +97,30 @@ div.line {
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 19.2px;
-    padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 19.2px;
+  padding: 10px 40px;
 }
 
-span {
-    color: #548BC5;
-    border: 2px solid #548BC5;
-    border-radius: 50px;
-    padding: 5px 10px;
-    margin-right: 10px;
+span.number {
+  color: #548bc5;
+  border: 2px solid #548bc5;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 
-div.first-form-content {
-    padding: 10px 40px;
+div.form-content {
+  padding: 10px 40px;
 }
 
 div.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
 div.left,
@@ -128,8 +128,9 @@ div.right {
   flex-grow: 1;
 }
 
-label {
-  color: #1D2C3C;
+label,
+div.card span {
+  color: #1d2c3c;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -141,9 +142,32 @@ input {
   outline: none;
   border: none;
   padding: 10px;
-  background-color: #EDEFF2;
+  background-color: #edeff2;
   border-radius: 4px;
   margin-bottom: 10px;
+}
+
+div.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #edeff2;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+div.card input,
+div.card span {
+  padding: 0;
+  margin: 0;
+}
+
+div.card span {
+  color: #646e7a;
+  text-wrap: nowrap;
 }
 
 div#rightItem {
@@ -153,7 +177,7 @@ div#rightItem {
   justify-content: center;
   align-items: center;
   padding: 20px 40px;
-  background-color: #1179BF;
+  background-color: #1179bf;
   height: 100%;
   border-radius: 0 7px 7px 0;
 }
