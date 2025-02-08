@@ -63,6 +63,7 @@ header nav ul li a.account:hover {
   text-decoration: none;
   background-color: #1d2c3c;
   color: #fff;
+  transition: ease-in-out 1s;
 }
 
 div.container {
@@ -194,7 +195,7 @@ span.qMark {
   font-weight: 700;
 }
 
-strong {
+div#leftItem strong {
   background-color: #566473;
   color: #fff;
   display: flex;
@@ -216,8 +217,89 @@ strong span {
 
 div#rightItem {
   width: 40%;
-  padding: 40px;
+  padding: 40px 40px 60px;
   background-color: #1179bf;
   color: #fff;
   border-radius: 0 7px 7px 0;
+}
+
+div#rightItem h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+div#rightItem p.price {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  padding: 10px 0;
+}
+
+sup,
+sub {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+
+p.renew,
+div.stuff div.row {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+div.stuff {
+  padding-bottom: 30px;
+}
+
+div.stuff div.row {
+  justify-content: flex-start;
+  gap: 15px;
+  font-style: normal;
+  padding-bottom: 5px;
+}
+
+div#rightItem p.QA {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 19.2px;
+  margin-bottom: 30px;
+}
+
+div#rightItem strong {
+  border-bottom: 4px solid #b9f5ff;
+  line-height: 30px;
+}
+
+p.FTP {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 20px 0;
+}
+
+p.FTP span {
+  font-weight: 700;
+}
+
+div.Doe {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+div.Doe img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 930px) {
+    div.container {
+        margin: 50px 0 10px;
+    }
 }
