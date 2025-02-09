@@ -20,13 +20,13 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #fff;
-  padding: 0 15%;
+  padding: 0 30px;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10%;
 }
 
 p {
@@ -69,20 +69,21 @@ div.assignments a:hover {
 @media screen and (max-width: 866px) {
   h1 {
     font-size: 3rem;
+    padding: 20px 5%;
   }
 }
 
 @media screen and (max-width: 690px) {
   body {
-    padding: 0 5%;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 505px) {
-  body {
-    padding: 0 10px;
-  }
-
   h1 {
     font-size: 2rem;
   }
