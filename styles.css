@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("assets/bg-image.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  padding: 0 15%;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+p.font {
+  font-family: "Dancing Script", cursive;
+}
+
+div.assignments {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0 30px;
+}
+
+div.assignments a {
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+div.assignments a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 866px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  div.assignments {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  div.assignments a {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
