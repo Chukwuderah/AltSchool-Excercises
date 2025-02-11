@@ -27,6 +27,14 @@ h1 {
   font-size: 4rem;
   text-align: center;
   padding: 20px 10%;
+  background: transparent;
+}
+
+h1:hover {
+  background: linear-gradient(to bottom right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 p {
