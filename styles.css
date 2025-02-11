@@ -31,7 +31,7 @@ h1 {
 }
 
 h1:hover {
-  background: linear-gradient(to bottom right, #ff0000, #0000ff);
+  background: linear-gradient(to bottom right, #f00, #00f, #0f0);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
