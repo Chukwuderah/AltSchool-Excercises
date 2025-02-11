@@ -67,11 +67,14 @@ div.assignments a {
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #fff;
+  background: transparent;
 }
 
 div.assignments a:hover {
-  background-color: #fff;
-  color: #000;
+  background: linear-gradient(to top right, rgb(83, 2, 2), #00f);
+  -webkit-background-clip: background;
+  background-clip: background;
+  border: transparent;
 }
 
 @media screen and (max-width: 866px) {
